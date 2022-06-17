@@ -1,0 +1,192 @@
+.header {
+    height: 70px;
+    width: 100%;
+    position: sticky;
+    top: 0px;
+    z-index: 1;
+    display: flex;
+    justify-content: space-between;
+    margin: 0 auto;
+    margin-bottom: 25px;
+    background: #c4c4c4;
+    color: white;
+    // box-shadow: 0px 2px 4px black;
+    
+    .navIcon{
+        display: none;
+        .resNavIcon{
+            width: 25px;
+            height: 100%;
+        }
+    }
+
+    .signInIcon{
+        display: none;
+    }
+
+    .logoContainer {
+        height: 100%;
+        width: 25%;
+        padding: 10px;
+        display: flex;
+        align-items: center;
+
+        .logoImage{
+            display: flex;
+            justify-content: center;
+            margin-right: 2%;
+            margin-left: 2%;
+            width: 3.5rem;
+            height: auto;
+        }
+
+        .logoText {
+            color: black;
+            font-size: 20px;
+            font-weight: bolder;
+            display: inline-block;
+        }
+    }
+  
+    .options {
+        width: 50%;
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        overflow: hidden;
+ 
+  
+        .option {
+            padding: 10px 15px;
+            cursor: pointer;
+            color: rgb(0, 0, 0);
+            font-size: 20px;
+            &:hover{
+                background-color:coral;
+                color: white;
+            }
+            &:focus{
+                background-color: coral;
+                color: white;
+            }    
+        }
+
+    }
+
+    .signInContainer {
+        height: 100%;
+        width: 25%;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+        margin-right: 2%;
+
+        .signIn {
+            padding: 5px 20px;
+            cursor: pointer;
+            color: white;
+            background-color: coral;
+            font-size: 20px;
+            //border: 1px solid rgb(0, 195, 255);
+            border-radius: 10px;
+            
+            &:hover{
+                color: white;
+                background-color: rgb(170, 77, 0);
+            }
+        }
+
+        .logOut {
+            padding: 5px 20px;
+            cursor: pointer;
+            color: white;
+            background-color: rgb(255, 60, 60);
+            font-size: 20px;
+            //border: 1px solid rgb(255, 0, 0);
+            border-radius: 10px;
+            
+            &:hover{
+                color: white;
+                background-color: red;
+            }
+        }
+    }
+}
+
+@media screen and (max-width: 960px) {
+    .header{
+        z-index: 1;
+        position: sticky;
+        justify-content: center;
+        top:0;
+        .logoContainer{
+            justify-content: center;
+        }
+        .options{
+            display: flex;
+            flex-direction: column;
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 70px;
+            left: 110%;
+            opacity: 1;
+            z-index:1;
+            
+            .option{
+                padding: 1.5rem 1.5rem;
+                cursor: pointer;
+                font-size: 2rem;
+                &:hover{
+                    color: white;
+                }
+                &:focus{
+                    color: white;
+                }    
+            }
+        }
+        .options.active{
+            background: coral;
+            left: 0px;
+            opacity:1;
+            transition: all 0.5s ease;
+            z-index:1;
+            height: 700%;
+            width: 100%;
+
+        }
+        .navIcon{
+            color: black;
+            display: flex;
+            margin: auto auto auto 20px;
+            padding: 1px;
+            width: 3.5rem;
+            height: 100%;
+            justify-content: center;
+
+        }
+        .signInContainer{
+            display: none;
+        }
+        .signInIcon{
+            color:black;
+            display: flex;
+            margin: auto 20px auto auto;
+            width: 3.5rem;
+            height: 100%;
+        }
+        
+
+    }
+
+}
+@media screen and (max-width: 540px) {
+    .header{
+        .logoContainer{
+            .logoText{
+                display: none;
+            }
+        }
+    }
+}

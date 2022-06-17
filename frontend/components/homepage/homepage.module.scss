@@ -1,0 +1,36 @@
+.homePage{
+    width:100%;
+    margin: auto;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    div{
+        text-align: center;
+        margin: auto;
+        align-items: center;
+        justify-content: center;
+        margin-bottom: 1rem;
+        .loadMoreItems {
+            text-align: center;
+            margin-bottom: 1rem;
+            margin: auto;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            height: 2rem;
+            width: 20%;
+            border: 1px solid coral;
+            border-radius: 1rem;
+            color: coral;
+            &:hover{
+                color: white;
+                background-color: coral;
+            }
+            
+        }
+
+    }
+}
+
+
+
