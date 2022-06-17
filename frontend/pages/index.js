@@ -1,10 +1,5 @@
-import Head from 'next/head';
 import React from 'react';
-import Image from 'next/image';
-import styles from '../styles/Home.module.css';
-import Link from 'next/link';
-import MOVIE_DATA from '../assets/movie.data';
-import CollectionPreview from '../components/collection-preview/collection-preview.component';
+
 import HomePage from '../components/homepage/homepage.component';
 
 class Home extends React.Component {

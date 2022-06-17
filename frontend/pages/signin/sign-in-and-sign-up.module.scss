@@ -1,0 +1,16 @@
+.signInAndSignUpcontainer {
+    margin: auto;
+    //padding: 20px;
+    display: flex;
+    width: 75%;
+    align-items: center;
+    border-radius: 1rem;
+    border: 1px solid #c4c4c4;
+    text-align: center;
+}
+
+@media screen and (max-width: 960px) {
+    .signInAndSignUpcontainer {
+        flex-direction: column;
+    }
+}
