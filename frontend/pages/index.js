@@ -24,7 +24,7 @@ class Home extends React.Component {
   }
 
   componentDidMount(){
-    fetch('http://localhost:3001/api/signedin', {
+    fetch(process.env.NEXT_PUBLIC_API_URL + '/signedin', {
       method: 'GET',
       headers: {
         'Accept': 'application/json',
