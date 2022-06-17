@@ -46,7 +46,7 @@ export const Header = (props) => {
             </div>
             <div className={click ? `${styles.options} ${styles.active}` : `${styles.options}`}>
                 <Link href="/movie">
-                    <a className={currentRoute === "/movie" ? `${styles.option} ${styles.active}` : `${styles.option}`} >Кино</a>
+                    <a className={currentRoute === "/movie" ? `${styles.option} ${styles.active}` : `${styles.option}`} >Кинотеатры</a>
                 </Link>
                 <Link href="/theatre" >
                     <a className={currentRoute === "/theatre" ? `${styles.option} ${styles.active}` : `${styles.option}`} >Театры</a>
